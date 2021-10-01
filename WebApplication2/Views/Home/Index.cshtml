@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "PaymentType";
+}
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+   
+</div>
+
+<div class="row" style="margin-top:10%">
+    <form action="" method="post">
+        <select name="paymentType" class="form-control" asp-items="@ViewBag.PaymentType"></select>
+        <input type="submit" value="Submit" formaction="Home/About" />
+
+    </form>
+
+    
+
+</div>
